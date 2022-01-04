@@ -1,0 +1,21 @@
+package tek.sayılaarın.toplamı;
+   //1 den n kadar olan tek sayıların toplamını bulunuz?
+   //n sayısı kullanıcıdan alıcağız1010
+import java.util.Scanner;
+
+public class TekSayılaarınToplamı {
+    
+    public static void main(String[] args) {
+      int i,toplam,n;
+      
+      Scanner s = new Scanner(System.in);
+      System.out.println("bir sayıyı giriniz:");
+      n = s.nextInt();
+      
+      toplam = 0;
+      for(i=1;i<n;i++){
+          if(i%2==1) toplam= toplam +i;
+      }
+      System.out.println("1-"+n+ "tek sayılar toplamı =" + toplam);
+    }  
+}
