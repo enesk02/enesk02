@@ -1,0 +1,18 @@
+package girilen.sayı.pkg2.nin.kuvvetleri;
+      // Girilen sayıya kadar olan ikinin kuvvetleri?
+import java.util.Scanner;
+
+public class GirilenSayı2NinKuvvetleri {
+
+   public static void main(String[] args) {
+     Scanner s= new Scanner(System.in);
+     System.out.println("Sayı giriniz :");
+     int input = s.nextInt();
+     int k= 1;
+     while (k <= input){
+         System.out.println( k );
+         k = k*2;
+     }
+    }
+    
+}
