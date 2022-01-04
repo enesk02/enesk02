@@ -1,0 +1,15 @@
+package ekrana.veri.yazdırmak;
+  // kullanıcıdan ismini alarak "merhaba isim" yazan programı yazınız
+import java.util.Scanner;
+public class EkranaVeriYazdırmak {
+
+    public static void main(String[] args) {
+        String isim;
+        Scanner s = new Scanner(System.in);
+        System.out.print("lütfen isminizi giriniz: ");
+        isim = s.nextLine();
+        
+        System.out.println("merhaba "+ isim);
+    }
+    
+}
