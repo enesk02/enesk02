@@ -1,0 +1,17 @@
+package pkg1.ile.pkg1000.arasındaki.asal.sayılar;
+    // 1 ile 1000 arasındaki Asal sayıları bulan program yazınız?
+public class Ile1000ArasındakiAsalSayılar {
+
+    public static void main(String[] args) {
+      int bs = 0;
+      int i,j;
+      for(i=3;i<1000;i++){
+          for (j=2;j<i;j++){
+             if(i%j==0) bs++; 
+          }
+          if(bs==0) System.out.println(i + "");
+          bs = 0;
+      }
+    }
+    
+}
