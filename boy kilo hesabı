@@ -1,0 +1,22 @@
+package boy.kilo.hesabı;
+import java.util.Scanner;
+public class BoyKiloHesabı {
+
+    public static void main(String[] args) {
+      Scanner s= new Scanner (System.in);
+      System.out.println("Boyunuzu cm olarak giriniz:"); 
+       int cm=s.nextInt();
+       System.out.println("Kilonuzu kg cinsinden giriniz:");
+       int kg=s.nextInt();
+      int sonuc=cm/kg ;
+      if (sonuc<2){
+      System.out.println("şisman");
+      }
+      else if(sonuc>=2.5 && sonuc<=2){
+         System.out.println("normal");
+      }
+      else{
+          System.out.println("Zayıf");
+      }
+    }
+    
