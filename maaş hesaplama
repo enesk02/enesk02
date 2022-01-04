@@ -1,0 +1,18 @@
+package maaş.hesaplama;
+
+import java.util.Scanner;
+
+public class MaaşHesaplama {
+    public static void main(String[] args) {
+        Scanner k = new Scanner (System.in);
+        System.out.println("Lütfen sicil numarasını giriniz:");
+        String sicil_no =k.nextLine();
+        System.out.println("Lütfen çalışma saatinizi giriniz");
+        int s= k.nextInt();
+        System.out.println("Lütfen saatlik ücretinizi giriniz");
+        int u=k.nextInt();
+        int Maas=s*u ;
+        System.out.println("sicil numarası:"+sicil_no + "/ln"+ "maaş:" +Maas );
+        
+    }
+}
