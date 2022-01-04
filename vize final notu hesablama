@@ -1,0 +1,19 @@
+package vize.pkgfinal.notu;
+     // vize notunun %40'ını final notunun %60'ını alan not ortalaması 
+     //hesaplayan program?
+import java.util.Scanner;
+public class VizeFinalNotu {
+
+    public static void main(String[] args) {
+       int v,f;
+       float ortalama;
+       Scanner s=new Scanner(System.in);
+       System.out.println("vize :");
+       v = s.nextInt();
+       System.out.println("final :");
+       f = s.nextInt();
+       ortalama = (float)(v*0.4+f*0.6);
+       System.out.println("ortalamamız=" + ortalama);
+    }
+    
+}
